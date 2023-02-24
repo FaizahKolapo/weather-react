@@ -42,9 +42,6 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   }
 
-  const currentTime = new Date();
-  const formattedTime = currentTime.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-
   return (
     <div className={(typeof weather.main !== 'undefined' && weather.main.temp > 16)
     ? 'app warm'
